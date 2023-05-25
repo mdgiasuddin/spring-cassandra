@@ -1,0 +1,11 @@
+spring:
+  cassandra:
+    keyspace-name: spring_boot_cassandra
+    schema-action: create_if_not_exists
+    contact-points: cassandra
+
+
+# docker-compose up -d
+# rm -Rf ~/.cassandra
+# docker exec -it cassandra cqlsh
+# create keyspace spring_boot_cassandra with replication = {'class':'SimpleStrategy','replication_factor':1};

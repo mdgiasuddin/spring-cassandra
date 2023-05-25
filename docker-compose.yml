@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  auth_service_db:
+    container_name: cassandra
+    image: "cassandra"
+    restart: always
+    ports:
+      - "9042:9042"
+    volumes:
+      - ~/home/gias/cassandra_storage:/var/lib/cassandra
